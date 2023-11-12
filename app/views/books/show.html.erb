@@ -1,0 +1,19 @@
+  <div class="s-notice">
+    <%= flash[:notice] %>
+  </div>
+
+  <div class="s-title">
+    <div class="t-title">Title:</div>
+    <div class="t-content"><%= @book.title %></div>
+  </div>
+
+  <div class="s-body">
+    <div class="b-body">Body:</div>
+    <div class="b-content"><%= @book.body %></div>
+  </div>
+
+  <div class="redirect">
+    <div class="s-elink"><%= link_to "Edit", edit_book_path(@book.id) %></div>
+    <div class="s-border">|</div>
+    <div class="s-blink"><%= link_to "Back", '/books' %></div>
+  </div>
